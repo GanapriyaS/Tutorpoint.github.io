@@ -27,68 +27,74 @@ padding:7px 20px;
 </style>
 <body>
     <header>
-    <nav class="navbar navbar-dark fixed-top navbar-expand-sm ">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-        <!-- in small screen to make size small  data-toggler-javascript component  to toggle components in navigation bar   data-target-navigation components-->
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><h3 class="text-white"><i class="fa fa-book"></i> TutorPoint</h3></a>
-        <div class="collapse navbar-collapse" id="Navbar">
-            <ul class="navbar-nav mx-auto">
-              <!-- mr- right margin so pushed left    navbar-nav - horizontal -->
-              <!-- fa font-awesome    fa-home is an icon    fa-lg larger icon-->
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a><li>
-                  <!-- nav-item show horizontal as links   active- active that link-->
-                <li class="nav-item"><a class="nav-link" href="code.html">Coding Examples</a><li>
-                <li class="nav-item  active"><a class="nav-link" href="#">Courses</a><li>
-                <li class="nav-item"><a class="nav-link" href="book.html">E-Books</a><li>
-            </ul>
-            <!-- link to trigger the hiding model m     navbar- textadd link include-->
-            <span class="navbar-text">
-              <a class="bg-danger" href="#" style="padding:10px 57px"> Login
-              </a>
-            </span>
+          <div class="jumbotron " style="height:50vh; background-image:url('img/5.webp'); background-size:cover; background-position:center; ">
+            <div class="container" style="background-color:transparent;">
+              <nav aria-label="breadcrumb" style=" margin-top:10vh; " >
+            <ol class="breadcrumb " style="border-radius:0; color:white; background-color:transparent;">
+              <li class="breadcrumb-item"><a class="text-white"href="#">Home</a></li>
+              <li class="breadcrumb-item active text-danger " aria-current="page">Courses</li>
+            </ol>
+            </nav>
+            </div>
+
+        <nav class="navbar navbar-dark fixed-top navbar-expand-sm ">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <!-- in small screen to make size small  data-toggler-javascript component  to toggle components in navigation bar   data-target-navigation components-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><h3 class="text-white"><i class="fa fa-book"></i> TutorPoint</h3></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mx-auto">
+                  <!-- mr- right margin so pushed left    navbar-nav - horizontal -->
+                  <!-- fa font-awesome    fa-home is an icon    fa-lg larger icon-->
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a><li>
+                    <!-- nav-item show horizontal as links   active- active that link-->
+                  <li class="nav-item"><a class="nav-link" href="code.html">Coding Examples</a><li>
+                  <li class="nav-item  active"><a class="nav-link" href="#">Courses</a><li>
+                  <li class="nav-item"><a class="nav-link" href="book.html">E-Books</a><li>
+                </ul>
+                <!-- link to trigger the hiding model m     navbar- textadd link include-->
+                <span class="navbar-text">
+                  <a class="bg-danger" href="#" style="padding:10px 57px"> Login
+                  </a>
+                </span>
+            </div>
+          </div>
+
+        </nav>
+
+      <div class="container" style="position:relative; ">
+        <div class="row row-content align-items-center justify-content-center mb-auto">
+          <div class="col-lg-3 col-0">
+            </div>
+            <div class="col-12 col-lg-6 bg-danger" >
+                <h5 class="text-white text-center p-2">Course</h5>
+          </div>
+          <div class="col-12 col-lg-3 bg-dark">
+
+          </div>
         </div>
-      </div>
-
-    </nav>
-<div class="container">
-  <nav aria-label="breadcrumb" style="position:absolute; margin-top:18vh; " >
-<ol class="breadcrumb " style="border-radius:0; color:white; background-color:transparent;">
-  <li class="breadcrumb-item"><a class="text-white"href="#">Home</a></li>
-  <li class="breadcrumb-item active text-danger " aria-current="page">Courses</li>
-</ol>
-</nav>
-</div>
-
-  <div class="container" style="position:relative;">
-    <div class="row row-content align-items-center justify-content-center bg-danger" style="padding:10px;  margin-top:30vh; left:30%; right:30%; margin-left:auto; margin-right:auto; position:absolute; ">
-        <div class="col-12" >
-            <h5 class="text-white text-center">Course</h5>
-      </div>
+        <div class="row row-content align-items-center justify-content-center bg-danger mt-auto" style="padding:40px 70px 40px;" >
+            <div class="col-12" >
+            <div class="d-flex justify-content-center align-items-center">
+              <form class="form-inline " >
+                <div class="form-group  mb-2 ">
+                <input style="border-radius:0; background-color:#e4ecf5;" type="text" class="form-control border-0" id="course" placeholder="Course">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                <input style="border-radius:0; background-color:#e4ecf5;" type="text" class="form-control border-0" id="category" placeholder="Category">
+                </div>
+                <button style="border-radius:0;" type="submit" class="btn btn-dark mb-2">Search</button>
+                </form>
+            </div>
+          </div>
     </div>
-    <div class="row row-content align-items-center justify-content-center bg-danger" style="padding:40px 70px 40px;  margin-top:38vh; left:0; right:0; margin-left:auto; marigin-right:auto; position:absolute;">
-        <div class="col-12" style="position:relative;">
-        <div class="d-flex justify-content-center align-items-center">
-          <form class="form-inline ">
-            <div class="form-group  mb-2 ">
-            <input style="border-radius:0; background-color:#e4ecf5;" type="text" class="form-control border-0" id="course" placeholder="Course">
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-            <input style="border-radius:0; background-color:#e4ecf5;" type="text" class="form-control border-0" id="category" placeholder="Category">
-            </div>
-            <button style="border-radius:0;" type="submit" class="btn btn-dark mb-2">Search Course</button>
-            </form>
-        </div>
+
       </div>
-              </div>
-  </div>
 
-        <div class="jumbotron d-flex flex-column align-items-center justify-content-center" style=" height:50vh; background-image:url('img/5.webp'); background-size:cover; background-position:center;">
-                  </div>
-      </header>
-
+    </div>
+    </header>
 
 <br><br><br><br><br>
     <div class="container" >
